@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ujala Yadav | BSc.IT Student & Aspiring Web Developer</title>
+  <meta name="description" content="Portfolio of Ujala Yadav - Second-year BSc.IT student at Thakur Shyamnarayan Degree College, 1st Rank department topper, exploring web development, AI tools, and cybersecurity.">
+  <meta name="keywords" content="Ujala Yadav, Portfolio, BSc.IT, Thakur Shyamnarayan Degree College, Web Development, AI Tools, Cybersecurity, Mumbai">
+  <meta name="author" content="Ujala Yadav">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ujala Yadav | Portfolio">
+  <meta property="og:description" content="Second-year BSc.IT student & 1st Rank Topper exploring web development and AI tools.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23D4AF6A'>UY</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Custom Glowing Cursor (Desktop Only) -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar-wrapper" id="navbar">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo" aria-label="Ujala Yadav Home">
+        <span class="logo-monogram">UY</span>
+        <span class="logo-text">Ujala <span class="gold-accent">Yadav</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active"><i class="fa-solid fa-house nav-icon"></i> Home</a></li>
+        <li><a href="#about" class="nav-link"><i class="fa-solid fa-user nav-icon"></i> About</a></li>
+        <li><a href="#interests" class="nav-link"><i class="fa-solid fa-compass nav-icon"></i> Interests</a></li>
+        <li><a href="#skills" class="nav-link"><i class="fa-solid fa-layer-group nav-icon"></i> Skills</a></li>
+        <li><a href="#projects" class="nav-link"><i class="fa-solid fa-laptop-code nav-icon"></i> Projects</a></li>
+        <li><a href="#achievements" class="nav-link"><i class="fa-solid fa-award nav-icon"></i> Achievements</a></li>
+        <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope nav-icon"></i> Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions (Theme Toggle & Contact CTA) -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+          <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+        </button>
+
+        <!-- Contact CTA Button -->
+        <a href="#contact" class="btn btn-gold-sm nav-cta">
+          <span>Contact Me</span>
+          <i class="fa-solid fa-arrow-trend-up"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+      <div class="mobile-drawer-header">
+        <div class="logo-monogram">UY</div>
+        <span class="logo-text">Ujala Yadav</span>
+        <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close navigation menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user"></i> About Me</a></li>
+        <li><a href="#interests" class="mobile-nav-link"><i class="fa-solid fa-compass"></i> Interests</a></li>
+        <li><a href="#skills" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+        <li><a href="#achievements" class="mobile-nav-link"><i class="fa-solid fa-award"></i> Achievements</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="#contact" class="btn btn-gold btn-block mobile-cta-btn">
+          <span>Get In Touch</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="hero">
+      <!-- Star / Constellation Canvas Background -->
+      <canvas id="starCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Large Background Watermark (Reference A Style) -->
+      <div class="hero-watermark" aria-hidden="true">PORTFOLIO</div>
+
+      <!-- Hero Radial Ambient Lighting -->
+      <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+      <div class="ambient-glow glow-hero-purple" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <!-- Hero Left Column: Intro & Headline -->
+        <div class="hero-content" data-animate="fade-up">
+          <div class="hero-greeting-pill">
+            <span class="pill-dot"></span>
+            <span>Welcome to my digital space</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I'm <br>
+            <span class="hero-name-highlight">Ujala Yadav</span>
+          </h1>
+
+          <!-- Typing Text Animation -->
+          <div class="hero-role-wrapper">
+            <span class="role-prefix">I am a </span>
+            <span class="typed-text" id="typedText"></span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </div>
+
+          <!-- Hero Intro Line -->
+          <p class="hero-description">
+            Second-year <strong>BSc.IT student</strong> at Thakur Shyamnarayan Degree College, exploring web development and AI tools with a passion for building clean, user-focused digital experiences.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-gold magnetic-btn">
+              <span>View Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="assets/Ujala_Yadav_Resume.jpg" download="Ujala_Yadav_Resume.jpg" class="btn btn-outline magnetic-btn" id="downloadResumeBtn">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Mini Quick Highlights -->
+          <div class="hero-quick-meta">
+            <div class="meta-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>BSc.IT (2025–2028)</span>
+            </div>
+            <div class="meta-separator">•</div>
+            <div class="meta-item">
+              <i class="fa-solid fa-people-group"></i>
+              <span>Team Co-operative & Leadership</span>
+            </div>
+            <div class="meta-separator">•</div>
+            <div class="meta-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Mumbai</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Cutout Portrait with Interactive Talking & Motion -->
+        <div class="hero-visual" data-animate="fade-left">
+          <div class="portrait-stage" id="portraitStage">
+            <!-- Reference B Style Layered Glow -->
+            <div class="portrait-glow-violet" aria-hidden="true"></div>
+            <div class="portrait-glow-gold" aria-hidden="true"></div>
+            <div class="portrait-backdrop-ring" aria-hidden="true"></div>
+
+
+            <!-- Full-Body Cutout Photo with Interactive Motion & Reaction -->
+            <div class="portrait-image-wrapper interactive-portrait-wrap" id="interactivePortraitWrap" title="Click me to interact!">
+              <img 
+                src="assets/images/ujala-fullbody.png" 
+                alt="Portrait of Ujala Yadav standing in professional black business suit - click to interact" 
+                class="portrait-img hero-floating-img"
+                id="ujalaFullbodyImg"
+                loading="eager"
+              >
+              <!-- Interactive Click Hint Badge -->
+              <span class="avatar-interactive-hint">
+                <i class="fa-solid fa-hand-pointer"></i> Click me to talk!
+              </span>
+            </div>
+
+            <!-- Floating Badge 1: 1st Rank -->
+            <div class="glass-badge badge-topper" data-animate="float-slow">
+              <div class="badge-icon gold-badge-icon">
+                <i class="fa-solid fa-crown"></i>
+              </div>
+              <div class="badge-content">
+                <span class="badge-label">Year 1 Topper</span>
+                <strong class="badge-value">1st Rank, 9.09 SGPA</strong>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2: Hackathon Participant -->
+            <div class="glass-badge badge-hackathon" data-animate="float-fast">
+              <div class="badge-icon purple-badge-icon">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div class="badge-content">
+                <span class="badge-label">HACKVISION 2024</span>
+                <strong class="badge-value">Hackathon Participant</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator (Reference A Style) -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About Me section">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">SCROLL DOWN</span>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-badge"><i class="fa-solid fa-user-astronaut"></i> DISCOVER</span>
+          <h2 class="section-title">About <span class="gold-accent">Me</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Close-up Photo in 3D Tilting Gold Frame -->
+          <div class="about-visual" data-animate="fade-right">
+            <div class="tilt-card-container" id="aboutTiltCard">
+              <div class="about-photo-frame">
+                <div class="frame-corner corner-tl"></div>
+                <div class="frame-corner corner-tr"></div>
+                <div class="frame-corner corner-bl"></div>
+                <div class="frame-corner corner-br"></div>
+                
+                <div class="about-photo-inner">
+                  <img 
+                    src="assets/images/ujala-closeup.png" 
+                    alt="Close-up portrait of Ujala Yadav smiling in professional blazer" 
+                    class="about-img"
+                    loading="lazy"
+                  >
+                  <div class="photo-overlay-glow"></div>
+                </div>
+
+                <!-- Academic Excellence Tag -->
+                <div class="photo-floating-tag">
+                  <i class="fa-solid fa-star gold-star"></i>
+                  <span>Academic Excellence</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Narrative & Key Details -->
+          <div class="about-content" data-animate="fade-left">
+            <span class="about-subtitle">Dedicated Learner & Aspiring Technologist</span>
+            <h3 class="about-heading">
+              Transforming Curiosity Into <span class="italic-serif gold-text">Clean Code</span> & Meaningful Solutions.
+            </h3>
+
+            <p class="about-text-lead">
+              I'm a dedicated, sincere, and hardworking second-year <strong>BSc.IT student</strong> at <strong>Thakur Shyamnarayan Degree College</strong>.
+            </p>
+
+            <p class="about-text">
+              I had the honor of being the <strong>first-year department topper (1st rank, 9.09 SGPA)</strong>, reflecting my commitment to academic rigor and systematic problem-solving.
+            </p>
+
+            <p class="about-text">
+              This portfolio represents my first solo project—built thoughtfully to understand, explore, and integrate modern <strong>AI tools</strong> with core web development practices. I enjoy taking foundational computer science concepts and translating them into user-friendly, responsive interfaces.
+            </p>
+
+            <!-- Key Trait Badges -->
+            <div class="trait-tags">
+              <span class="trait-tag"><i class="fa-solid fa-check gold-icon"></i> 1st Rank Department Topper</span>
+              <span class="trait-tag"><i class="fa-solid fa-check gold-icon"></i> Sincere & Hardworking</span>
+              <span class="trait-tag"><i class="fa-solid fa-check gold-icon"></i> AI Tools Explorer</span>
+              <span class="trait-tag"><i class="fa-solid fa-check gold-icon"></i> Team Co-operative & Leadership Abilities</span>
+            </div>
+
+            <!-- Academic Info Table / Cards -->
+            <div class="about-info-grid">
+              <div class="info-cell">
+                <span class="info-label"><i class="fa-solid fa-building-columns"></i> Degree College</span>
+                <span class="info-value">Thakur Shyamnarayan Degree College</span>
+              </div>
+              <div class="info-cell">
+                <span class="info-label"><i class="fa-solid fa-school"></i> Junior College</span>
+                <span class="info-value">Bhavan's College</span>
+              </div>
+              <div class="info-cell">
+                <span class="info-label"><i class="fa-solid fa-book-open"></i> Program</span>
+                <span class="info-value">Bachelor of Science in Information Technology (BSc.IT)</span>
+              </div>
+              <div class="info-cell">
+                <span class="info-label"><i class="fa-solid fa-calendar-check"></i> Graduation Batch</span>
+                <span class="info-value">2025–2028 (Expected)</span>
+              </div>
+              <div class="info-cell">
+                <span class="info-label"><i class="fa-solid fa-medal"></i> Academic Standing</span>
+                <span class="info-value">Rank 1 • 9.09 SGPA (Year 1 Topper)</span>
+              </div>
+              <div class="info-cell">
+                <span class="info-label"><i class="fa-solid fa-users-gear"></i> Core Strength</span>
+                <span class="info-value">Team Co-operative & Leadership</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STATS ROW ==================== -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <!-- Stat 1 -->
+          <div class="stat-card" data-animate="zoom-in" data-delay="0">
+            <div class="stat-icon-wrap">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="stat-number-wrap">
+              <span class="stat-counter" data-target="9.09" data-decimals="2">0.00</span>
+              <span class="stat-unit"></span>
+            </div>
+            <p class="stat-label">First Year SGPA</p>
+            <span class="stat-sub">Academic Excellence</span>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-card" data-animate="zoom-in" data-delay="100">
+            <div class="stat-icon-wrap">
+              <i class="fa-solid fa-ranking-star"></i>
+            </div>
+            <div class="stat-number-wrap">
+              <span class="stat-counter" data-target="1" data-decimals="0">0</span>
+              <span class="stat-unit">st</span>
+            </div>
+            <p class="stat-label">Rank in Year 1</p>
+            <span class="stat-sub">Department Topper</span>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-card" data-animate="zoom-in" data-delay="200">
+            <div class="stat-icon-wrap">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="stat-number-wrap">
+              <span class="stat-counter" data-target="1" data-decimals="0">0</span>
+              <span class="stat-unit">+</span>
+            </div>
+            <p class="stat-label">Hackathon</p>
+            <span class="stat-sub">HACKVISION 2024</span>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-card" data-animate="zoom-in" data-delay="300">
+            <div class="stat-icon-wrap">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="stat-number-wrap">
+              <span class="stat-counter" data-target="2" data-decimals="0">0</span>
+              <span class="stat-unit">nd</span>
+            </div>
+            <p class="stat-label">Year BSc.IT</p>
+            <span class="stat-sub">Thakur Shyamnarayan DC</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INTERESTS SECTION ==================== -->
+    <section class="section interests-section" id="interests">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-badge"><i class="fa-solid fa-compass"></i> PASSIONS</span>
+          <h2 class="section-title">My Areas of <span class="gold-accent">Interest</span></h2>
+          <p class="section-subtitle">Three pillars of computer science that ignite my curiosity and drive my daily learning journey.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="interests-grid">
+          <!-- Card 1: Web Development -->
+          <div class="interest-card" data-animate="fade-up" data-delay="100">
+            <div class="interest-card-inner">
+              <div class="interest-icon-box">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <span class="interest-number">01</span>
+              <h3 class="interest-title">Web Development</h3>
+              <p class="interest-summary">
+                Building responsive, clean, and intuitive interfaces with modern semantic markup, stylesheets, and JavaScript logic.
+              </p>
+              
+              <div class="interest-details">
+                <h4 class="details-heading">What excites me:</h4>
+                <ul class="details-list">
+                  <li><i class="fa-solid fa-circle-check"></i> Responsive layouts & mobile-first UI</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Clean typography & interactive micro-animations</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Accessible, semantic web structure</li>
+                </ul>
+              </div>
+
+              <div class="interest-pill-tags">
+                <span class="interest-pill">HTML5</span>
+                <span class="interest-pill">CSS3</span>
+                <span class="interest-pill">JavaScript</span>
+                <span class="interest-pill">UI/UX</span>
+              </div>
+            </div>
+            <div class="interest-card-glow" aria-hidden="true"></div>
+          </div>
+
+          <!-- Card 2: Artificial Intelligence -->
+          <div class="interest-card" data-animate="fade-up" data-delay="200">
+            <div class="interest-card-inner">
+              <div class="interest-icon-box">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <span class="interest-number">02</span>
+              <h3 class="interest-title">Artificial Intelligence</h3>
+              <p class="interest-summary">
+                Exploring AI tools, understanding generative workflows, and leveraging intelligent assistants to accelerate learning and code synthesis.
+              </p>
+              
+              <div class="interest-details">
+                <h4 class="details-heading">What excites me:</h4>
+                <ul class="details-list">
+                  <li><i class="fa-solid fa-circle-check"></i> Modern AI developer tools & prompt craft</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Workflow acceleration & problem exploration</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Future integration into user-facing web apps</li>
+                </ul>
+              </div>
+
+              <div class="interest-pill-tags">
+                <span class="interest-pill">AI Tools</span>
+                <span class="interest-pill">Prompt Design</span>
+                <span class="interest-pill">Exploration</span>
+                <span class="interest-pill">Innovation</span>
+              </div>
+            </div>
+            <div class="interest-card-glow" aria-hidden="true"></div>
+          </div>
+
+          <!-- Card 3: Cybersecurity -->
+          <div class="interest-card" data-animate="fade-up" data-delay="300">
+            <div class="interest-card-inner">
+              <div class="interest-icon-box">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <span class="interest-number">03</span>
+              <h3 class="interest-title">Cybersecurity</h3>
+              <p class="interest-summary">
+                Learning the foundational principles of how computer networks and applications stay resilient, authenticated, and secure against threats.
+              </p>
+              
+              <div class="interest-details">
+                <h4 class="details-heading">What excites me:</h4>
+                <ul class="details-list">
+                  <li><i class="fa-solid fa-circle-check"></i> Web security fundamentals & safe input validation</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Understanding authentication & data privacy</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Defensive programming mindsets</li>
+                </ul>
+              </div>
+
+              <div class="interest-pill-tags">
+                <span class="interest-pill">Network Security</span>
+                <span class="interest-pill">Data Safety</span>
+                <span class="interest-pill">Fundamentals</span>
+                <span class="interest-pill">Defense</span>
+              </div>
+            </div>
+            <div class="interest-card-glow" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-badge"><i class="fa-solid fa-layer-group"></i> COMPETENCIES</span>
+          <h2 class="section-title">Technical & Professional <span class="gold-accent">Skills</span></h2>
+          <p class="section-subtitle">Continuously expanding my toolset across frontend fundamentals, modern AI technologies, and collaborative problem-solving.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: HTML / CSS / JavaScript -->
+          <div class="skill-card" data-animate="fade-up" data-delay="100">
+            <div class="skill-header">
+              <div class="skill-icon-gold">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">HTML5, CSS3 & JavaScript</h3>
+                <span class="skill-level">Core Web Fundamentals</span>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+            <p class="skill-desc">
+              Building semantic web structures, responsive flexbox/grid layouts, CSS custom properties, and vanilla JS DOM interactivity.
+            </p>
+            <div class="progress-track">
+              <div class="progress-bar" data-width="85%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Web Development -->
+          <div class="skill-card" data-animate="fade-up" data-delay="150">
+            <div class="skill-header">
+              <div class="skill-icon-gold">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Web Development</h3>
+                <span class="skill-level">Responsive & Accessible Design</span>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+            <p class="skill-desc">
+              Creating mobile-friendly layouts, cross-browser compatibility, modern interactive UI patterns, and component structures.
+            </p>
+            <div class="progress-track">
+              <div class="progress-bar" data-width="80%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: AI Tools -->
+          <div class="skill-card" data-animate="fade-up" data-delay="200">
+            <div class="skill-header">
+              <div class="skill-icon-gold">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">AI Tools & Exploration</h3>
+                <span class="skill-level">Prompting & Coding Assistance</span>
+              </div>
+              <span class="skill-percent">82%</span>
+            </div>
+            <p class="skill-desc">
+              Leveraging state-of-the-art AI assistants for debugging, research, architecture exploration, and rapid code prototyping.
+            </p>
+            <div class="progress-track">
+              <div class="progress-bar" data-width="82%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Team Co-operative & Leadership Abilities -->
+          <div class="skill-card" data-animate="fade-up" data-delay="250">
+            <div class="skill-header">
+              <div class="skill-icon-gold">
+                <i class="fa-solid fa-people-roof"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Team Co-operative & Leadership</h3>
+                <span class="skill-level">Hackathon Direction & Synergy</span>
+              </div>
+              <span class="skill-percent">92%</span>
+            </div>
+            <p class="skill-desc">
+              Demonstrated leadership and co-operative team coordination during the HACKVISION hackathon and group projects, keeping teams focused and motivated.
+            </p>
+            <div class="progress-track">
+              <div class="progress-bar" data-width="92%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 5: Problem Solving -->
+          <div class="skill-card" data-animate="fade-up" data-delay="300">
+            <div class="skill-header">
+              <div class="skill-icon-gold">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Problem Solving</h3>
+                <span class="skill-level">Analytical & Logical Thinking</span>
+              </div>
+              <span class="skill-percent">88%</span>
+            </div>
+            <p class="skill-desc">
+              Approaching technical challenges methodically, breaking complex problems down into modular, testable steps.
+            </p>
+            <div class="progress-track">
+              <div class="progress-bar" data-width="88%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 6: Academic Discipline -->
+          <div class="skill-card" data-animate="fade-up" data-delay="350">
+            <div class="skill-header">
+              <div class="skill-icon-gold">
+                <i class="fa-solid fa-book-bookmark"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Academic Discipline & Research</h3>
+                <span class="skill-level">Continuous Self-Learning</span>
+              </div>
+              <span class="skill-percent">95%</span>
+            </div>
+            <p class="skill-desc">
+              Consistent study habits, thorough conceptual understanding, first-rank academic rigor, and dedication to growth.
+            </p>
+            <div class="progress-track">
+              <div class="progress-bar" data-width="95%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 7: Python & C++ Core -->
+          <div class="skill-card" data-animate="fade-up" data-delay="400">
+            <div class="skill-header">
+              <div class="skill-icon-gold">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Python & C++ Programming</h3>
+                <span class="skill-level">Certified Core Developer</span>
+              </div>
+              <span class="skill-percent">86%</span>
+            </div>
+            <p class="skill-desc">
+              Certified by Google Devs Launchpad (Python) and Scaler (C++). Solid object-oriented programming, data structures, and algorithmic mastery.
+            </p>
+            <div class="progress-track">
+              <div class="progress-bar" data-width="86%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-badge"><i class="fa-solid fa-diagram-project"></i> SHOWCASE</span>
+          <h2 class="section-title">Featured <span class="gold-accent">Projects</span></h2>
+          <p class="section-subtitle">Real-world applications, hackathon innovations, and solo web explorations.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="project-filter-tabs" data-animate="fade-up">
+          <button class="filter-tab-btn active" data-filter="all">All Projects</button>
+          <button class="filter-tab-btn" data-filter="web">Web Development</button>
+          <button class="filter-tab-btn" data-filter="ai">AI & Tools</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1: Telemedicine Portal -->
+          <article class="project-card" data-category="web" data-animate="fade-up" data-delay="100">
+            <div class="project-card-banner banner-telemedicine">
+              <div class="project-banner-overlay">
+                <span class="project-badge-tag"><i class="fa-solid fa-shield-virus"></i> Hackathon Project</span>
+                <div class="project-action-icons">
+                  <button class="card-quick-btn view-details-btn" data-project="telemedicine" title="View details" aria-label="View Telemedicine Portal details">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="banner-illustration">
+                <i class="fa-solid fa-stethoscope banner-center-icon"></i>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <div class="project-category-row">
+                <span class="category-chip">Web Development</span>
+                <span class="event-chip">HACKVISION 2024</span>
+              </div>
+
+              <h3 class="project-title">Telemedicine Portal</h3>
+              <p class="project-excerpt">
+                A digital healthcare consultation and appointment management web prototype designed during the first-year HACKVISION hackathon to connect patients with doctors securely.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Healthcare UI</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn-text-gold view-details-btn" data-project="telemedicine">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Personal Portfolio Website -->
+          <article class="project-card" data-category="web ai" data-animate="fade-up" data-delay="200">
+            <div class="project-card-banner banner-portfolio">
+              <div class="project-banner-overlay">
+                <span class="project-badge-tag"><i class="fa-solid fa-star"></i> First Solo Project</span>
+                <div class="project-action-icons">
+                  <button class="card-quick-btn view-details-btn" data-project="portfolio" title="View details" aria-label="View Portfolio project details">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="banner-illustration">
+                <i class="fa-solid fa-code-branch banner-center-icon"></i>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <div class="project-category-row">
+                <span class="category-chip">Web Dev & AI Tools</span>
+                <span class="event-chip">Solo Project</span>
+              </div>
+
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-excerpt">
+                An interactive, responsive single-page portfolio crafted to understand and explore modern AI tools, 3D card tilt interactions, custom particles, and dark/light themes.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Semantic HTML5</span>
+                <span class="tech-tag">Vanilla CSS3</span>
+                <span class="tech-tag">JavaScript ES6</span>
+                <span class="tech-tag">AI-Assisted Workflow</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn-text-gold view-details-btn" data-project="portfolio">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: More Coming Soon -->
+          <article class="project-card coming-soon-card" data-category="web ai" data-animate="fade-up" data-delay="300">
+            <div class="project-card-banner banner-upcoming">
+              <div class="banner-illustration pulse-animation">
+                <i class="fa-solid fa-seedling banner-center-icon"></i>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <div class="project-category-row">
+                <span class="category-chip">Under Active Development</span>
+              </div>
+
+              <h3 class="project-title">More Projects Coming Soon</h3>
+              <p class="project-excerpt">
+                Currently exploring full-stack web applications, JavaScript frontend frameworks, and AI-powered utilities in my second year of BSc.IT.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">React / Next.js</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">Cybersecurity Labs</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="#contact" class="btn-text-gold">
+                  <span>Suggest an Idea</span>
+                  <i class="fa-solid fa-comment-dots"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS & CERTIFICATIONS SECTION ==================== -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-badge"><i class="fa-solid fa-trophy"></i> VERIFIED CREDENTIALS</span>
+          <h2 class="section-title">Certifications & <span class="gold-accent">Achievements</span></h2>
+          <p class="section-subtitle">Verified trophies, national hackathon honors, and industry programming certifications.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Interactive Sliding Motion Carousel -->
+        <div class="achievement-slider-wrapper" data-animate="fade-up">
+          <!-- Slider Track Container -->
+          <div class="achievement-slider-viewport" id="achievementViewport">
+            <div class="achievement-slider-track" id="achievementTrack">
+
+              <!-- Slide 1: 1st Rank Topper Trophy & Certificate -->
+              <div class="achievement-slide" data-index="0">
+                <div class="achievement-card">
+                  <div class="achievement-card-media" data-cert-img="assets/images/achievement-topper-trophy.png" data-cert-title="First Rank — Academic Excellence Trophy & Certificate" data-cert-badge="Annual Prize Distribution 2025–2026" data-cert-desc="Awarded to Ms. Ujala Yadav for securing First Rank in class FYIT, Department of BSc Information Technology in the academic year 2025–2026 at Thakur Shyamnarayan Degree College.">
+                    <img 
+                      src="assets/images/achievement-topper-trophy.png" 
+                      alt="Ujala Yadav holding First Rank Academic Excellence Trophy and Certificate" 
+                      class="achievement-card-img"
+                      loading="lazy"
+                    >
+                    <div class="media-hover-overlay">
+                      <span class="zoom-pill"><i class="fa-solid fa-magnifying-glass-plus"></i> View Full Photo</span>
+                    </div>
+                    <span class="achievement-ribbon gold-ribbon"><i class="fa-solid fa-crown"></i> 1st Rank Topper</span>
+                  </div>
+                  <div class="achievement-card-body">
+                    <div class="achievement-meta-row">
+                      <span class="cert-issuer"><i class="fa-solid fa-building-columns"></i> Thakur Shyamnarayan Degree College</span>
+                      <span class="cert-date">Academic Year 2025–2026</span>
+                    </div>
+                    <h3 class="achievement-title">First Rank — Academic Excellence Trophy & Certificate</h3>
+                    <p class="achievement-desc">
+                      Honored with the official department topper trophy and certificate at the Annual Prize Distribution for securing <strong>First Rank (9.09 SGPA)</strong> in FYIT across the Department of Information Technology.
+                    </p>
+                    <div class="achievement-tag-row">
+                      <span class="cert-tag"><i class="fa-solid fa-award"></i> 1st Rank</span>
+                      <span class="cert-tag"><i class="fa-solid fa-chart-line"></i> 9.09 SGPA</span>
+                      <span class="cert-tag"><i class="fa-solid fa-trophy"></i> Gold Trophy</span>
+                    </div>
+                    <div class="achievement-footer">
+                      <button class="btn-cert-view open-cert-modal-btn" data-img="assets/images/achievement-topper-trophy.png" data-title="First Rank — Academic Excellence Trophy & Certificate" data-badge="Thakur Shyamnarayan Degree College" data-desc="Awarded to Ms. Ujala Yadav for securing First Rank in class FYIT, Department of BSc Information Technology (Annual Prize Distribution 2025–2026).">
+                        <span>Inspect Trophy & Certificate</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: HACKVISION Participation Certificate -->
+              <div class="achievement-slide" data-index="1">
+                <div class="achievement-card">
+                  <div class="achievement-card-media" data-cert-img="assets/images/certificate-hackvision.jpg" data-cert-title="HACKVISION Hackathon Certificate of Participation" data-cert-badge="Team MindSpark • Healthcare Track" data-cert-desc="Proudly presented to Ujala Yadav from Thakur Shyamnarayan Degree College as Team MindSpark for participating in HackVision. Partners: Unstop, VighnoLearn, .xyz, Navan. Signed by Dr. G.D. Giri (Principal) and Mr. Saugat Das (CSI Faculty Chairperson).">
+                    <img 
+                      src="assets/images/certificate-hackvision.jpg" 
+                      alt="HACKVISION Hackathon Participation Certificate awarded to Ujala Yadav" 
+                      class="achievement-card-img"
+                      loading="lazy"
+                    >
+                    <div class="media-hover-overlay">
+                      <span class="zoom-pill"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</span>
+                    </div>
+                    <span class="achievement-ribbon purple-ribbon"><i class="fa-solid fa-bolt"></i> Hackathon Honor</span>
+                  </div>
+                  <div class="achievement-card-body">
+                    <div class="achievement-meta-row">
+                      <span class="cert-issuer"><i class="fa-solid fa-laptop-code"></i> CSI & TSDC • Unstop Partnered</span>
+                      <span class="cert-date">HackVision 2024</span>
+                    </div>
+                    <h3 class="achievement-title">HACKVISION Hackathon Participation Certificate</h3>
+                    <p class="achievement-desc">
+                      Certified hackathon participant in <strong>Team MindSpark</strong>. Collaborated intensively under strict 24-hour time limits to design, build, and present a functional prototype of a <strong>Telemedicine Portal</strong>.
+                    </p>
+                    <div class="achievement-tag-row">
+                      <span class="cert-tag"><i class="fa-solid fa-users"></i> Team MindSpark</span>
+                      <span class="cert-tag"><i class="fa-solid fa-heart-pulse"></i> Telemedicine</span>
+                      <span class="cert-tag"><i class="fa-solid fa-handshake"></i> Unstop Partner</span>
+                    </div>
+                    <div class="achievement-footer">
+                      <button class="btn-cert-view open-cert-modal-btn" data-img="assets/images/certificate-hackvision.jpg" data-title="HACKVISION Hackathon Certificate of Participation" data-badge="Team MindSpark • CSI & TSDC" data-desc="Proudly presented to Ujala Yadav as Team MindSpark in HackVision organized by Thakur Shyamnarayan Degree College, Mumbai in association with Unstop, .xyz, and Navan.">
+                        <span>Inspect Certificate</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Python Certification -->
+              <div class="achievement-slide" data-index="2">
+                <div class="achievement-card">
+                  <div class="achievement-card-media" data-cert-img="assets/images/certificate-python.jpg" data-cert-title="Python Certification Course of Excellence" data-cert-badge="Google Developers Launchpad Partnered" data-cert-desc="Programming Hub certifies that Ujala Yadav has successfully completed the Python Certification Course and has knowledge of Python programming. Certificate ID: 790b141c6bbff9e, Granted on 2026-02-15.">
+                    <img 
+                      src="assets/images/certificate-python.jpg" 
+                      alt="Programming Hub Python Certification Course of Excellence for Ujala Yadav" 
+                      class="achievement-card-img"
+                      loading="lazy"
+                    >
+                    <div class="media-hover-overlay">
+                      <span class="zoom-pill"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</span>
+                    </div>
+                    <span class="achievement-ribbon green-ribbon"><i class="fa-brands fa-python"></i> Python Certified</span>
+                  </div>
+                  <div class="achievement-card-body">
+                    <div class="achievement-meta-row">
+                      <span class="cert-issuer"><i class="fa-solid fa-shield-halved"></i> Programming Hub • Google Developers</span>
+                      <span class="cert-date">Granted: 2026-02-15</span>
+                    </div>
+                    <h3 class="achievement-title">Python Certification Course of Excellence</h3>
+                    <p class="achievement-desc">
+                      Certified proficiency in Python programming covering fundamental syntax, data structures, conditional control flow, functions, OOP concepts, and modular programming techniques.
+                    </p>
+                    <div class="achievement-tag-row">
+                      <span class="cert-tag"><i class="fa-brands fa-python"></i> Python 3</span>
+                      <span class="cert-tag"><i class="fa-solid fa-id-card"></i> ID: 790b141c6bbff9e</span>
+                      <span class="cert-tag"><i class="fa-brands fa-google"></i> Google Dev Launchpad</span>
+                    </div>
+                    <div class="achievement-footer">
+                      <button class="btn-cert-view open-cert-modal-btn" data-img="assets/images/certificate-python.jpg" data-title="Python Certification Course of Excellence" data-badge="Programming Hub & Google Developers Launchpad" data-desc="Certificate ID: 790b141c6bbff9e. Validates demonstrated knowledge and problem-solving capability in Python programming.">
+                        <span>Inspect Certificate</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4: C++ Course Essentials -->
+              <div class="achievement-slide" data-index="3">
+                <div class="achievement-card">
+                  <div class="achievement-card-media" data-cert-img="assets/images/certificate-cpp.jpg" data-cert-title="C++ Course: Learn the Essentials — Certificate of Excellence" data-cert-badge="Scaler Topics Certified" data-cert-desc="In recognition of the completion of the tutorial: C++ Course: Learn the Essentials (91 Video Tutorials, 14 Modules, 14 Challenges), awarded on 27 January 2026. Signed by Anshuman Singh, Co-founder SCALER.">
+                    <img 
+                      src="assets/images/certificate-cpp.jpg" 
+                      alt="Scaler Topics C++ Course Learn the Essentials Certificate awarded to Ujala Yadav" 
+                      class="achievement-card-img"
+                      loading="lazy"
+                    >
+                    <div class="media-hover-overlay">
+                      <span class="zoom-pill"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</span>
+                    </div>
+                    <span class="achievement-ribbon blue-ribbon"><i class="fa-solid fa-code"></i> C++ Certified</span>
+                  </div>
+                  <div class="achievement-card-body">
+                    <div class="achievement-meta-row">
+                      <span class="cert-issuer"><i class="fa-solid fa-graduation-cap"></i> SCALER Topics</span>
+                      <span class="cert-date">27 January 2026</span>
+                    </div>
+                    <h3 class="achievement-title">C++ Course: Learn the Essentials Certificate</h3>
+                    <p class="achievement-desc">
+                      Completed an intensive 91-tutorial track across 14 comprehensive modules and 14 coding challenges, mastering low-level memory concepts, pointers, standard template library (STL), and object-oriented architecture.
+                    </p>
+                    <div class="achievement-tag-row">
+                      <span class="cert-tag"><i class="fa-solid fa-file-video"></i> 91 Video Tutorials</span>
+                      <span class="cert-tag"><i class="fa-solid fa-cubes"></i> 14 Modules</span>
+                      <span class="cert-tag"><i class="fa-solid fa-puzzle-piece"></i> 14 Challenges</span>
+                    </div>
+                    <div class="achievement-footer">
+                      <button class="btn-cert-view open-cert-modal-btn" data-img="assets/images/certificate-cpp.jpg" data-title="C++ Course: Learn the Essentials Certificate of Excellence" data-badge="SCALER Topics" data-desc="Issued on 27 January 2026 by Anshuman Singh (Co-founder SCALER). Validates mastery of 91 video lessons, 14 modules, and 14 coding challenges in C++.">
+                        <span>Inspect Certificate</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Slider Controls (Prev / Next & Dots) -->
+          <div class="slider-controls-row">
+            <button class="slider-arrow-btn slider-prev-btn" id="sliderPrevBtn" aria-label="Previous slide">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="slider-dots-container" id="sliderDots">
+              <button class="slider-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+              <button class="slider-dot" data-slide="1" aria-label="Go to slide 2"></button>
+              <button class="slider-dot" data-slide="2" aria-label="Go to slide 3"></button>
+              <button class="slider-dot" data-slide="3" aria-label="Go to slide 4"></button>
+            </div>
+            <button class="slider-arrow-btn slider-next-btn" id="sliderNextBtn" aria-label="Next slide">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Vertical Timeline Spine -->
+        <div class="timeline-container" style="margin-top: 60px;">
+          <div class="timeline-spine" aria-hidden="true"></div>
+
+          <!-- Timeline Item 1: Department Topper -->
+          <div class="timeline-item timeline-left" data-animate="fade-right">
+            <div class="timeline-node">
+              <i class="fa-solid fa-crown"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-date-badge">
+                <i class="fa-regular fa-calendar"></i> Academic Year 2025–2026
+              </div>
+              <h3 class="timeline-title">First Rank — Academic Excellence FYIT</h3>
+              <div class="timeline-subtitle">Thakur Shyamnarayan Degree College • Department Topper</div>
+              <p class="timeline-text">
+                Secured the official <strong>1st Rank (9.09 SGPA)</strong> in FYIT across the entire Department of Information Technology, receiving the coveted Academic Excellence trophy and certificate at the Annual Prize Distribution.
+              </p>
+              <div class="timeline-tag-list">
+                <span class="timeline-tag"><i class="fa-solid fa-medal"></i> 1st Rank</span>
+                <span class="timeline-tag"><i class="fa-solid fa-chart-line"></i> 9.09 SGPA</span>
+                <span class="timeline-tag"><i class="fa-solid fa-award"></i> Department Topper</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: HACKVISION Hackathon -->
+          <div class="timeline-item timeline-right" data-animate="fade-left">
+            <div class="timeline-node">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-date-badge">
+                <i class="fa-regular fa-calendar"></i> HackVision 2024
+              </div>
+              <h3 class="timeline-title">HACKVISION Hackathon Participant</h3>
+              <div class="timeline-subtitle">Team MindSpark • Thakur Shyamnarayan Degree College</div>
+              <p class="timeline-text">
+                Competed in the collegiate <strong>HACKVISION</strong> hackathon in partnership with Unstop and .xyz. Collaborated in <strong>Team MindSpark</strong> to build and pitch a functional prototype for an accessible <strong>Telemedicine Portal</strong>.
+              </p>
+              <div class="timeline-tag-list">
+                <span class="timeline-tag"><i class="fa-solid fa-bolt"></i> Rapid Prototyping</span>
+                <span class="timeline-tag"><i class="fa-solid fa-users"></i> Team MindSpark</span>
+                <span class="timeline-tag"><i class="fa-solid fa-heart-pulse"></i> Telemedicine</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Programming Certifications -->
+          <div class="timeline-item timeline-left" data-animate="fade-right">
+            <div class="timeline-node">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-date-badge">
+                <i class="fa-regular fa-calendar"></i> Early 2026
+              </div>
+              <h3 class="timeline-title">Python & C++ Programming Certifications</h3>
+              <div class="timeline-subtitle">Programming Hub (Google Dev Launchpad) & Scaler Topics</div>
+              <p class="timeline-text">
+                Earned dual industry programming certifications: <strong>Python Certification</strong> from Programming Hub and the comprehensive <strong>C++ Course (91 Tutorials, 14 Challenges)</strong> from Scaler Topics.
+              </p>
+              <div class="timeline-tag-list">
+                <span class="timeline-tag"><i class="fa-brands fa-python"></i> Python Certified</span>
+                <span class="timeline-tag"><i class="fa-solid fa-code"></i> C++ Essentials</span>
+                <span class="timeline-tag"><i class="fa-solid fa-brain"></i> Algorithmic Mastery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-badge"><i class="fa-solid fa-paper-plane"></i> DIRECT CONNECT</span>
+          <h2 class="section-title">Get In <span class="gold-accent">Touch</span></h2>
+          <p class="section-subtitle">Reach out directly for hackathons, collaborative student projects, or technical discussions.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-single-card-wrap" data-animate="fade-up">
+          <div class="contact-info-card executive-contact-card">
+            <div class="contact-card-top-row">
+              <div class="contact-status-badge">
+                <span class="status-pulse-dot"></span>
+                <span>Available for Tech Collaborations & Hackathons</span>
+              </div>
+              <span class="location-chip"><i class="fa-solid fa-location-dot gold-icon"></i> Mumbai, Maharashtra</span>
+            </div>
+
+            <h3 class="contact-headline">
+              Ready to collaborate on innovative digital solutions? Let's connect!
+            </h3>
+            <p class="contact-subtext">
+              I'm always eager to collaborate on student hackathons, explore AI tools, or connect with fellow developers. You can reach out directly via email, LinkedIn, or GitHub below:
+            </p>
+
+            <div class="contact-details-grid">
+              <!-- Email with Copy Button & Mailto Link -->
+              <div class="contact-detail-item">
+                <div class="detail-icon gold-icon-bg">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="detail-info">
+                  <span class="detail-label">Direct Email</span>
+                  <a href="mailto:ujalayadav2207@gmail.com" class="detail-link" id="emailLink">ujalayadav2207@gmail.com</a>
+                </div>
+                <div class="detail-actions-group">
+                  <button class="btn-copy-email" id="copyEmailBtn" title="Copy email address" aria-label="Copy email to clipboard">
+                    <i class="fa-regular fa-copy"></i>
+                    <span class="copy-tooltip">Copy</span>
+                  </button>
+                  <a href="mailto:ujalayadav2207@gmail.com" class="detail-action-btn" title="Open mail client" aria-label="Open email client">
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-detail-item">
+                <div class="detail-icon gold-icon-bg">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="detail-info">
+                  <span class="detail-label">LinkedIn Profile</span>
+                  <a href="https://in.linkedin.com/in/ujala-yadav-221769373" target="_blank" rel="noopener noreferrer" class="detail-link">
+                    linkedin.com/in/ujala-yadav-221769373
+                  </a>
+                </div>
+                <a href="https://in.linkedin.com/in/ujala-yadav-221769373" target="_blank" rel="noopener noreferrer" class="detail-action-btn" aria-label="Open LinkedIn profile in new tab">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-detail-item">
+                <div class="detail-icon gold-icon-bg">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="detail-info">
+                  <span class="detail-label">GitHub Repository</span>
+                  <a href="https://github.com/ujalayadav2207-prog" target="_blank" rel="noopener noreferrer" class="detail-link">
+                    github.com/ujalayadav2207-prog
+                  </a>
+                </div>
+                <a href="https://github.com/ujalayadav2207-prog" target="_blank" rel="noopener noreferrer" class="detail-action-btn" aria-label="Open GitHub profile in new tab">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <!-- Degree College -->
+              <div class="contact-detail-item">
+                <div class="detail-icon gold-icon-bg">
+                  <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div class="detail-info">
+                  <span class="detail-label">Degree College</span>
+                  <span class="detail-text">Thakur Shyamnarayan Degree College, Mumbai</span>
+                </div>
+              </div>
+
+              <!-- Junior College -->
+              <div class="contact-detail-item">
+                <div class="detail-icon gold-icon-bg">
+                  <i class="fa-solid fa-school"></i>
+                </div>
+                <div class="detail-info">
+                  <span class="detail-label">Junior College</span>
+                  <span class="detail-text">Bhavan's College, Mumbai</span>
+                </div>
+              </div>
+
+              <!-- Program & Standing -->
+              <div class="contact-detail-item">
+                <div class="detail-icon gold-icon-bg">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="detail-info">
+                  <span class="detail-label">Graduation Program</span>
+                  <span class="detail-text">BSc.IT (2025–2028 Expected) • 9.09 SGPA (Rank 1)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Primary Action Buttons in Contact -->
+            <div class="contact-primary-actions">
+              <a href="mailto:ujalayadav2207@gmail.com" class="btn btn-gold">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Send Email to Ujala</span>
+              </a>
+              <a href="assets/Ujala_Yadav_Resume.jpg" download="Ujala_Yadav_Resume.jpg" class="btn btn-outline" id="contactDownloadResumeBtn">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <span>Download Resume (JPG)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="logo-monogram">UY</span>
+          <span class="logo-text">Ujala Yadav</span>
+        </div>
+        <p class="footer-bio">
+          Second-year BSc.IT student at Thakur Shyamnarayan Degree College. 1st Rank Department Topper. Passionate about Web Development, AI Tools, and Cybersecurity.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <span class="footer-heading">Quick Links</span>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <span class="footer-heading">Connect With Me</span>
+        <div class="footer-social-icons">
+          <a href="https://in.linkedin.com/in/ujala-yadav-221769373" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/ujalayadav2207-prog" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:ujalayadav2207@gmail.com" class="social-circle-link" aria-label="Email Ujala">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+        <p class="footer-email-text">ujalayadav2207@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">
+          &copy; 2026 <strong>Ujala Yadav</strong>. Built with modern web standards and AI tools.
+        </p>
+        <p class="topper-badge-small">
+          <i class="fa-solid fa-award gold-icon"></i> 1st Rank, 9.09 SGPA • Thakur Shyamnarayan Degree College
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Project Details Popup Modal -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-category-badge" id="modalProjectCategory">Project Category</span>
+          <h3 class="modal-title" id="modalProjectTitle">Project Title</h3>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close project details modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body" id="modalProjectContent">
+        <!-- Dynamic project details injected by JavaScript -->
+      </div>
+
+      <div class="modal-footer" id="modalProjectFooter">
+        <button class="btn btn-outline-sm" id="modalDismissBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificate & Trophy Lightbox Modal -->
+  <div class="modal-backdrop" id="certificateModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+    <div class="modal-dialog cert-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-category-badge" id="certModalBadge">Verified Credential</span>
+          <h3 class="modal-title" id="certModalTitle">Certificate Title</h3>
+        </div>
+        <button class="modal-close-btn" id="certModalCloseBtn" aria-label="Close certificate lightbox">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body cert-modal-body">
+        <div class="cert-lightbox-img-wrap">
+          <img id="certModalImg" src="" alt="Certificate full resolution preview" class="cert-modal-image">
+        </div>
+        <div class="cert-modal-desc-wrap">
+          <p id="certModalDesc" class="cert-modal-description"></p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a id="certModalDownloadLink" href="" download class="btn btn-gold-sm">
+          <i class="fa-solid fa-download"></i>
+          <span>Download Image</span>
+        </a>
+        <button class="btn btn-outline-sm" id="certModalDismissBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Resume Preview / Download Modal -->
+  <div class="modal-backdrop" id="resumeModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+    <div class="modal-dialog cert-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-category-badge">Curriculum Vitae</span>
+          <h3 class="modal-title" id="resumeModalTitle">Ujala Yadav — Official Resume</h3>
+        </div>
+        <button class="modal-close-btn" id="resumeModalCloseBtn" aria-label="Close resume modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body cert-modal-body">
+        <!-- High-Resolution Document Image -->
+        <div class="resume-document-wrap">
+          <img src="assets/Ujala_Yadav_Resume.jpg" alt="Official Resume of Ujala Yadav" class="resume-sheet-img">
+        </div>
+        
+        <div class="resume-meta-callout">
+          <p><strong><i class="fa-solid fa-graduation-cap gold-icon"></i> Education:</strong> BSc.IT (2025–2028 Expected) at Thakur Shyamnarayan Degree College • Junior College: Bhavan's College</p>
+          <p><strong><i class="fa-solid fa-people-roof gold-icon"></i> Strength:</strong> Team Co-operative & Leadership Abilities • Department Topper (9.09 SGPA)</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="assets/Ujala_Yadav_Resume.jpg" download="Ujala_Yadav_Resume.jpg" class="btn btn-gold" id="confirmDownloadResumeBtn">
+          <i class="fa-solid fa-download"></i>
+          <span>Download Resume (JPG)</span>
+        </a>
+        <button class="btn btn-outline-sm" id="dismissResumeModalBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
