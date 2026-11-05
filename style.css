@@ -2703,7 +2703,7 @@ ul {
 
 .contact-details-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   margin-bottom: 36px;
 }
@@ -2712,6 +2712,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 16px;
+  min-width: 0;
   padding: 16px 20px;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.03);
@@ -2744,6 +2745,7 @@ ul {
   flex-direction: column;
   gap: 2px;
   flex-grow: 1;
+  min-width: 0;
   overflow: hidden;
 }
 
