@@ -102,6 +102,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
   scroll-padding-top: calc(var(--navbar-height) + 20px);
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
