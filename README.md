@@ -109,7 +109,7 @@ Designed and built by blending **Reference A** (dark navy and gold aesthetic, th
 ## 🛠️ Project Structure
 
 ```
-portfolio/
+MyPortfolio/
 ├── index.html                 # Main standalone HTML5 entry point
 ├── style.css                  # Custom styling (Design tokens, glassmorphism, animations)
 ├── script.js                  # Interactivity (Canvas, typing, tilt, counters, validation)
@@ -128,22 +128,22 @@ portfolio/
 ## 🌐 Deploying to GitHub Pages or Netlify
 
 ### Option 1: GitHub Pages (Free)
-1. Push this folder to a GitHub repository:
+1. Push this repository to GitHub with the website files in the repository root:
    ```bash
    git init
    git add .
    git commit -m "Initial commit of Ujala Yadav portfolio"
    git branch -M main
-   git remote add origin https://github.com/ujalayadav2207-prog/portfolio.git
+   git remote add origin https://github.com/ujalayadav2207-prog/MyPortfolio.git
    git push -u origin main
    ```
 2. On GitHub, go to your repository **Settings** → **Pages**.
 3. Under **Branch**, select `main` and root `/`, then click **Save**.
-4. Your website will be live at `https://ujalayadav2207-prog.github.io/portfolio/`!
+4. Your website will be live at `https://ujalayadav2207-prog.github.io/MyPortfolio/`!
 
 ### Option 2: Netlify (Drag & Drop)
 1. Go to [Netlify Drop](https://app.netlify.com/drop).
-2. Drag and drop the `portfolio` folder directly into your browser.
+2. Drag and drop the repository folder directly into your browser.
 3. Your site will be deployed worldwide in under 10 seconds!
 
 ---
