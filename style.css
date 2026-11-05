@@ -972,6 +972,14 @@ ul {
   justify-content: center;
 }
 
+.portrait-picture {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
 .interactive-portrait-wrap {
   cursor: pointer;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
@@ -3416,8 +3424,11 @@ ul {
   }
 
   .badge-topper {
-    left: -10px;
-    top: 20%;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: max-content;
+    margin-inline: auto;
   }
 
   .badge-hackathon {

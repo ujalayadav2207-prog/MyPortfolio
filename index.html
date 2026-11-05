@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
   <!-- Custom Glowing Cursor (Desktop Only) -->
@@ -184,15 +184,18 @@
             <div class="portrait-backdrop-ring" aria-hidden="true"></div>
 
 
-            <!-- Full-Body Cutout Photo with Interactive Motion & Reaction -->
+            <!-- Use a closer portrait on phones so her face stays easy to see. -->
             <div class="portrait-image-wrapper interactive-portrait-wrap" id="interactivePortraitWrap" title="Click me to interact!">
-              <img 
-                src="assets/images/ujala-fullbody.png" 
-                alt="Portrait of Ujala Yadav standing in professional black business suit - click to interact" 
-                class="portrait-img hero-floating-img"
-                id="ujalaFullbodyImg"
-                loading="eager"
-              >
+              <picture class="portrait-picture">
+                <source media="(max-width: 480px)" srcset="assets/images/ujala-closeup.png">
+                <img
+                  src="assets/images/ujala-fullbody.png"
+                  alt="Portrait of Ujala Yadav in a black business suit"
+                  class="portrait-img hero-floating-img"
+                  id="ujalaFullbodyImg"
+                  loading="eager"
+                >
+              </picture>
               <!-- Interactive Click Hint Badge -->
               <span class="avatar-interactive-hint">
                 <i class="fa-solid fa-hand-pointer"></i> Click me to talk!
